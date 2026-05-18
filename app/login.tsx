@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import "./App.css";
 import { useState } from 'react';
 
@@ -34,7 +35,7 @@ export default function Login() {
                     onChange={handlePassword} />
             </label><br />
             <button type="submit">Login</button>
-            <p className='small'> if you don't have an account, SignUp<br /> Forget Password </p>
+            <p className='small'> if you don't have an account, <Link to="/register">SignUp</Link></p>
         </form>
     );
 }

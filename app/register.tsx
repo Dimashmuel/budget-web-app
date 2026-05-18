@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import { Link } from "react-router";
 
 export default function Register() {
     const [email, setEmail] = useState('');
@@ -51,7 +52,9 @@ export default function Register() {
             </label><br />
 
             <button type="submit" >Register</button>
-            <p className='small'> if you already have an account, Login</p>   
+            <p className='small'> if you already have an account, 
+                <Link to="/login"> Login</Link>
+            </p>   
         
         </form>
 
