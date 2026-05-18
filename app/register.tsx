@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import "./App.css";
 
 export default function Register() {
     const [email, setEmail] = useState('');
@@ -24,6 +24,7 @@ export default function Register() {
 
     return (
         <form onSubmit={e => e.preventDefault()}>
+
             <h1 style={{ color: 'blue' }}>Register Page</h1>
             <label>Email:
                 <input
@@ -49,8 +50,9 @@ export default function Register() {
                     onChange={handleConfirmPassword} />
             </label><br />
 
-            <button type="submit">Register</button>
-            <p className='small'> if you already have an account, Login</p>
+            <button type="submit" >Register</button>
+            <p className='small'> if you already have an account, Login</p>   
+        
         </form>
 
     );
